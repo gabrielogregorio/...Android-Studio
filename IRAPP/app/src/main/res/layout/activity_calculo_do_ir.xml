@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundoPadrao"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    tools:context=".CalculoDoIr">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:verticalScrollbarPosition="right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="24pt"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:paddingBottom="15pt"
+            android:text="IR CALCULADO"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="1pt"
+            android:background="@color/colorLaranjaEscuro"
+            android:paddingBottom="5pt"
+            android:layout_gravity="center"
+            android:paddingTop="5pt"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="1pt"
+                android:background="@color/colorLaranjaClaro"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="left"
+                android:textSize="11pt"
+                android:paddingLeft="5pt"
+                android:layout_weight="1"
+                android:text="Salário Bruto"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="11pt"
+                android:paddingRight="5pt"
+                android:gravity="right"
+                android:id="@+id/txtSalarioBruto"
+                android:text="999,99"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="1pt"
+            android:background="@color/colorLaranjaEscuro"
+            android:paddingBottom="5pt"
+            android:layout_gravity="center"
+            android:paddingTop="5pt"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="1pt"
+                android:background="@color/colorLaranjaClaro"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11pt"
+                android:textColor="#ffffff"
+                android:gravity="left"
+                android:paddingLeft="5pt"
+                android:layout_weight="1"
+                android:text="Dedução com dependentes"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:paddingRight="5pt"
+                android:textSize="11pt"
+                android:gravity="right"
+                android:id="@+id/txtDeducaoDependetes"
+                android:text="999,99"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorLaranjaEscuro"
+            android:layout_marginTop="1pt"
+            android:paddingBottom="5pt"
+            android:layout_gravity="center"
+            android:paddingTop="5pt"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="1pt"
+                android:background="@color/colorLaranjaClaro"/>
+            <TextView
+                android:textSize="11pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="left"
+                android:paddingLeft="5pt"
+                android:layout_weight="1"
+                android:text="Valor do INSS"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11pt"
+                android:textColor="#ffffff"
+                android:paddingRight="5pt"
+                android:gravity="right"
+                android:id="@+id/txtValorInss"
+                android:text="999,99"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1pt"
+            android:orientation="horizontal"
+            android:background="@color/colorLaranjaEscuro"
+            android:paddingBottom="5pt"
+            android:layout_gravity="center"
+            android:paddingTop="5pt"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="1pt"
+                android:background="@color/colorLaranjaClaro"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="11pt"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="left"
+                android:paddingLeft="5pt"
+                android:layout_weight="1"
+                android:text="Alíquota"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11pt"
+                android:textColor="#ffffff"
+                android:paddingRight="5pt"
+                android:gravity="right"
+                android:id="@+id/txtAlicota"
+                android:text="999,99"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1pt"
+            android:orientation="horizontal"
+            android:background="@color/colorLaranjaEscuro"
+            android:paddingBottom="5pt"
+            android:layout_gravity="center"
+            android:paddingTop="5pt"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="1pt"
+                android:background="@color/colorLaranjaClaro"/>
+
+            <TextView
+                android:textSize="11pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="left"
+                android:paddingLeft="5pt"
+                android:layout_weight="1"
+                android:text="Parcela a deduzir"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="11pt"
+                android:paddingRight="5pt"
+                android:gravity="right"
+                android:id="@+id/txtParcelaDeduzir"
+                android:text="999,99"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorLaranjaEscuro"
+            android:paddingBottom="5pt"
+            android:layout_marginTop="1pt"
+            android:layout_gravity="center"
+            android:paddingTop="5pt"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="1pt"
+                android:background="@color/colorLaranjaClaro"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="11pt"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:gravity="left"
+                android:paddingLeft="5pt"
+                android:layout_weight="1"
+                android:text="IR retido na fonte do trabalhador"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="11pt"
+                android:paddingRight="5pt"
+                android:layout_marginTop="2pt"
+                android:gravity="right"
+                android:id="@+id/txtIrRetido"
+                android:text="999,99"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="1pt"
+            android:background="#ff2266">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7pt"
+                android:background="@color/colorLaranjaEscuro"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="12pt"
+                android:id="@+id/btnVoltarTela"
+                android:text="Refazer Calculo"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

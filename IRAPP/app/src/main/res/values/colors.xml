@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FB4004</color>
+    <color name="colorPrimaryDark">#FB4004</color>
+    <color name="colorAccent">#FFAF96</color>
+
+    <color name="colorFundoPadrao">#FB774D</color>
+    <color name="colorLaranjaEscuro">#FF6939</color>
+    <color name="colorLaranjaClaro">#FFBFAA</color>
+
+    <color name="colorFundoNoturnoEscuro">#464646</color>
+</resources>

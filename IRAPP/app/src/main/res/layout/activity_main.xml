@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorFundoPadrao"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalScrollbarPosition="defaultPosition">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="24pt"
+            android:fontFamily="sans-serif-black"
+            android:textAlignment="center"
+            android:paddingBottom="55pt"
+            android:text="IR CALCULO"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="11pt"
+            android:textColor="#ffffff"
+            android:text="Salário Bruto" />
+
+        <EditText
+            android:id="@+id/edtSalarioBruto"
+            android:inputType="numberDecimal"
+            android:textSize="11pt"
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="5pt"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:text="Número de dependentes" />
+
+        <EditText
+            android:id="@+id/edtNumeroDependentes"
+            android:textColor="#ffffff"
+            android:textSize="11pt"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11pt"
+            android:textColor="#ffffff"
+            android:id="@+id/txtAvisoErro"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_marginTop="20pt"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ee663b"
+            android:layout_width="match_parent"
+            android:textSize="12pt"
+            android:padding="5pt"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal"
+            android:textAlignment="center"
+            android:background="@color/colorFundoPadrao"
+            android:text="Calcular Impostos" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20pt"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
