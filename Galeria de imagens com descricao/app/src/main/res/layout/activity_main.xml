@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="312dp"
+        android:src="@drawable/img1" />
+
+    <TextView
+        android:id="@+id/txtFoto"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:text="Como buracos negros como este se formam? Os dois buracos negros que espiralaram juntos para produzir o evento de onda gravitacional GW190521 não foram apenas os buracos negros mais massivos já vistos pelo LIGO e pelo VIRGO até agora, suas massas - 66 e 85 massas solares - eram sem precedentes e inesperadas. Buracos negros de menor massa, abaixo de cerca de 65 massas solares, são conhecidos por se formarem em explosões de supernova . Por outro lado, acredita-se que os buracos negros de maior massa, acima de 135 massas solares, sejam criados por estrelas muito massivas que implodem depois de usarem seus elementos produtores de fusão nuclear . Como tal buracos negros de massa intermediária vieram a existir ainda é desconhecida, embora uma hipótese sustente que eles resultam de colisões consecutivas de estrelas e buracos negros em aglomerados de estrelas densas. Apresentado é uma ilustração dos buracos negros imediatamente antes da colisão, anotados com setas indicando seus eixos de rotação. Na ilustração, as ondas espirais indicam a produção de radiação gravitacional , enquanto as estrelas circundantes destacam a possibilidade de que a fusão ocorreu em um aglomerado de estrelas . Visto no ano passado, mas proveniente de uma época em que o universo tinha apenas cerca de metade de sua idade atual ( z ~ 0,8), fusão de buraco negro GW190521 é o mais distante já detectado, dentro dos erros de medição." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="inicio" />
+
+                <Button
+                    android:id="@+id/btnAnterior"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="voltar" />
+
+                <Button
+                    android:id="@+id/btnProxima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="proximo" />
+
+                <Button
+                    android:id="@+id/btnFinal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="final" />
+            </LinearLayout>
+
+</LinearLayout>
